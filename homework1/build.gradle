@@ -1,0 +1,15 @@
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-reflect:1.9.23"
+}
+
+jar {
+    manifest {
+        attributes['Main-Class'] = 'ru.micromagicman.android.homework1.ZooApplicationKt'
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.compileClasspath.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+}
