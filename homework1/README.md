@@ -1,6 +1,6 @@
 # Домашнее задание №1
 
-## Сборка проета
+## Сборка проекта
 
 ```bash
 ./gradlew clean :homework1:build --refresh-dependencies
@@ -12,5 +12,5 @@
 Значение по умолчанию - `20`. Максимальное количество животных - `500`.
 
 ```bash
-java -jar homework1/build/libs/homework1-1.0.0-SNAPSHOT.jar 500
+java -jar homework1/build/libs/homework1-1.0.0-SNAPSHOT.jar 26
 ```
