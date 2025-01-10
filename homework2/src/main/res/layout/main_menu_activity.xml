@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        style="@style/ButtonMain"
+        android:id="@+id/button_change_text"
+        android:layout_marginBottom="@dimen/default_vertical_margin"
+        android:text="@string/changing_text_button_text"/>
+
+    <Button
+        style="@style/ButtonMain"
+        android:id="@+id/button_change_colors"
+        android:text="@string/changing_sizes_button_text"/>
+</LinearLayout>

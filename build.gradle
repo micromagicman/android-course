@@ -1,26 +1,8 @@
-plugins {
-    id('org.jetbrains.kotlin.jvm') version('1.9.23') apply false
-}
-
 subprojects {
-    apply plugin: 'org.jetbrains.kotlin.jvm'
-
     group = 'ru.micromagicman.android'
     version = '1.0.0-SNAPSHOT'
 
     repositories {
         mavenCentral()
-    }
-
-    dependencies {
-        testImplementation 'org.jetbrains.kotlin:kotlin-test'
-    }
-
-    test {
-        useJUnitPlatform()
-    }
-
-    kotlin {
-        jvmToolchain(17)
     }
 }
