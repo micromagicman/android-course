@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">homework2</string>
+    <string name="title_activity_main">Меню</string>
+    <string name="changing_text_button_text">Изменить текст на этой кнопке</string>
+    <string name="changing_sizes_button_text">Изменить размеры на этой кнопке</string>
+    <string name="button_text_hint">Текст на кнопке</string>
+    <string name="back_button_text">Назад</string>
+    <string name="button_text_size_text">Размер текста на кнопке</string>
+    <string name="button_padding_text">Размер отступов внутри кнопки</string>
+    <string name="size">Размер</string>
+    <string name="dash">–</string>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <style name="Theme.AndroidCourse.Hw2" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+</resources>

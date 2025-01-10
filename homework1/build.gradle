@@ -1,5 +1,18 @@
+plugins {
+    id('org.jetbrains.kotlin.jvm') version('1.9.23')
+}
+
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-reflect:1.9.23"
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+kotlin {
+    jvmToolchain(17)
 }
 
 jar {

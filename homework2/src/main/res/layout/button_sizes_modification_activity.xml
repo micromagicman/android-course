@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_button_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ru.micromagicman.android.homework2.view.SizeView
+            android:id="@+id/button_text_size_view"
+            app:min="10"
+            app:max="30"
+            app:label="@string/button_text_size_text"
+            android:layout_marginBottom="@dimen/default_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ru.micromagicman.android.homework2.view.SizeView
+            android:id="@+id/button_padding_view"
+            app:min="8"
+            app:max="48"
+            app:label="@string/button_padding_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
