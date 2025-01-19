@@ -2,6 +2,7 @@
 /**/build/
 /.vscode/
 /.gradle/
+/kotlin-test/
 
 .DS_Store
 *.properties

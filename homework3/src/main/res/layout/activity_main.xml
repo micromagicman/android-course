@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:paddingHorizontal="@dimen/default_horizontal_padding"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="48dp"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/error_text"
+                android:visibility="gone"
+                android:textColor="@color/error"
+                android:text="@string/error_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ru.micromagicman.android.homework3.view.CalculationFormulaView
+                android:id="@+id/formula"
+                app:x="@string/x_initial_value"
+                app:y="@string/y_initial_value"
+                app:denominator="@string/denominator_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:visibility="gone"
+                android:layout_width="@dimen/progress_bar_size"
+                android:layout_height="@dimen/progress_bar_size"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:paddingHorizontal="@dimen/default_horizontal_padding"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/x_equals" />
+
+            <EditText
+                android:id="@+id/value_x"
+                android:text="@string/x_initial_value"
+                android:inputType="numberSigned"
+                style="@style/NumericEditText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/y_equals" />
+
+            <EditText
+                android:id="@+id/value_y"
+                android:text="@string/y_initial_value"
+                android:inputType="numberSigned"
+                style="@style/NumericEditText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate" />
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
