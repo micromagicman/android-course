@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Homework3</string>
+    <string name="x_equals">X =</string>
+    <string name="y_equals">Y =</string>
+    <string name="calculate">Вычислить</string>
+    <string name="cancel">Отмена</string>
+    <string name="x_initial_value">123</string>
+    <string name="y_initial_value">321</string>
+    <string name="denominator_value">2</string>
+    <string name="error_text">В процессе вычисления выражения произошла ошибка</string>
+</resources>
